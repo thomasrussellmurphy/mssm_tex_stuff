@@ -2,14 +2,142 @@
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{fullpage}
-\author{Hamilton, et al.}  
-%\date{\today}  
-\title{Hamilton's Helpful Hints}  
+\author{Hamilton, et al.} 
+%\date{\today} 
+\title{Hamilton's Helpful Hints} 
  
-\begin{document}  
-\maketitle  
-\section{Triangle Geometry}    
-     \subsection{In more detail}\label{sec:subsectionmoredetail}  
-          Subsection text. The indents don’t have to be here,  
-          but they help you see the document structure.  
-\end{document}  
+\begin{document} 
+\maketitle 
+\section{Triangle Geometry}	
+	 \subsection{Comparing Triangles}\label{sec:using the Pythagorean Theorem}
+		Using the Pythagorean Theorem, we can see, for a triangle with sides $a, b, c$: \\
+		For a right triangle:
+		\begin{equation}
+		 	a^2+b^2 = c^2
+		\end{equation}
+		For an acute triangle:
+		\begin{equation}
+			a^2+b^2 > c^2
+		\end{equation}
+		For an obtuse triangle: 
+		\begin{equation}
+			a^2+b^2 < c^2
+		\end{equation}
+	 
+	 \subsection{Families of Right Triangles}\label{sec: families of right triangles}
+		Finding Pythagorean Triples using algebra:
+		
+		For two integers $m$ and $n$ such that $m > n$ and the two values are relatively prime (they have no common factor except for 1), then the Pythagorean Triple is:
+		
+		\begin{equation}\label{sec: method of forming Pythagorean Triples}
+			(m^2 - n^2, 2mn, m^2 + n^2)
+		\end{equation}
+		
+		Examples of some common triples:
+		
+		$(3, 4, 5) {\rightarrow} (6, 8, 10) {\rightarrow} (9, 12, 15)$ etc.
+		
+		$(5, 12, 13)$
+		
+		$(8, 15, 17)$
+		
+		$(7, 24, 25)$
+		
+		$(9, 40, 41)$
+		
+		$(11, 60, 61)$
+		
+		$(12, 35, 37)$
+		
+		$(20, 21, 29)$
+		
+		$(13, 84, 85)$
+	
+	\subsection{Special Right Triangles}\label{sec: patterns in special right triangles}
+	
+		In a $30^{\circ}-60^{\circ}-90^{\circ}$ right triangle, let $s$ be the shorter leg opposing the $30^{\circ}$ angle, $l$ be the longer leg opposing the $60^{\circ}$ angle, and $h$ be the hypotenuse. This means:
+		
+		\begin{equation}
+			s = \frac{1}{2}h
+		\end{equation}
+		\begin{equation}
+			l = s\sqrt{3} = \frac{1}{2}h\sqrt{3}
+		\end{equation}
+		
+		In a $45^{\circ}-45^{\circ}-90^{\circ}$ right triangle, let $s$ be the length of a leg and $h$ be the hypotenuse. This means:
+		\begin{equation}
+			l\sqrt{2} = h
+		\end{equation}
+		
+	
+	\subsection{Altitude to Hypotenuse Theorem}\label{sec: altitude to hypotenuse theorem}
+		For a right triangle with legs $a$ and $b$, hypotenuse $c$, the altitude $h$ to side $c$ divides the hypotenuse into two segments $x$ and $y$ that correspond to $b$ and $a$. \\
+		\begin{equation}\label{sec: eqn:similarity relations 1}
+			\frac{x}{h} = \frac{h}{y}
+		\end{equation}
+		\begin{equation}\label{sec: eqn:similarity relations 2}
+			\frac{x}{b} = \frac{b}{c}, \frac{y}{a} = \frac{a}{c}
+		\end{equation}
+		\begin{equation}\label{sec: eqn:similarity relations 3}
+			ch = ab 
+		\end{equation} 
+	
+	\subsection{Median to Hypotenuse}\label{sec: median to hypotenuse}
+		In a right triangle, when a median is drawn from the vertex containing the right angle to the hypotenuse, the length of the median is one-half the length of the hypotenuse. In addition, the median divides the right triangle into two triangles of equal area.
+	
+	\subsection{A Special Triangle}\label{sec: special triangle situation}
+		In a 13-14-15 triangle, the altitude to the side of length 14 has a length of 12.
+	
+	\subsection{An Arbitrary Point in an Equilateral Triangle}\label{sec: properties of a point inside an equilateral triangle}
+		Let P be any point in the interior of the equilateral triangle. The sum of the distances from P to each side of the triangle is equal to the altitude of the triangle. If $A, B, C$ are the points on each side of the triangle closest to point P and $s$ is the side length of the triangle, then:
+		
+		\begin{equation}
+			PA + PB + PC = h = \frac{1}{2}s\sqrt{3}
+		\end{equation}
+	
+	\subsection{An Important Ratio with an Angle Bisector}\label{sec: a ratio concerning an angle bisector in a triangle}
+		In any triangle ABC, where sides $a, b, c$ correspond to the vertices of the same letter, let the angle bisector of C divide side $c$ into two portions, $d, e$, that correspond to sides $a, b$. The relationship between $a, b, d, e$ is:
+		\begin{equation}
+			\frac{a}{b} = \frac{d}{e}
+		\end{equation}
+	
+	\subsection{The Two-Pole Problem}\label{sec: two poles connected to the base of the other pole}
+		If two poles of heights $a, b$ have their bases on a flat surface and the top of b is connected to the bottom of b by a rope and vise versa, the height of pole c from the surface to the intersection of the two pieces of rope is:
+		
+		\begin{equation}
+			c = \frac{ab}{a+b}
+		\end{equation}
+	
+	\subsection{Basic Proportionality Using a Parallel Side}\label{sec: proportionality with a parallel intersection in a triangle}
+		Given a triangle CDE with point A on side CE and point B on side DE such that AB is parallel to CD, the following proportions hold true:
+		
+		\begin{equation}
+			\frac{EA}{AC} = \frac{EB}{BD}
+		\end{equation}
+		\begin{equation}
+			\frac{EA}{EC} = \frac{EB}{ED}
+		\end{equation}
+		\begin{equation}
+			\frac{EA}{EC} = \frac{AB}{CD}
+		\end{equation}
+		\begin{equation}
+			\frac{EB}{EC} = \frac{AB}{CD}
+		\end{equation}
+	
+	\subsection{Similar Triangles or Other Shapes}\label{sec: simple proportions between properties of various similar objects}
+		For two objects, 1 and 2, let $s$ be a side, $p$ be a perimeter, $h$ be a height, $A$ be an area, and $V$ be a volume. When using some $s_1$ and $s_2$ or other property, the two measures correspond between the two objects. This gives the following formulae:
+		
+		\begin{equation}
+			\frac{s_1}{s_2} = \frac{p_1}{p_2} = \frac{h_1}{h_2}
+		\end{equation}
+		\begin{equation}
+			\left(\frac{s_1}{s_2}\right)^2 = \frac{A_1}{A_2}
+		\end{equation}
+		\begin{equation}
+			\left(\frac{s_!}{s_2}\right)^3 = \frac{V_1}{V_2}
+		\end{equation}
+	
+	\subsection{A Special Similar Triangle}\label{sec: a common problem about similar triangles}
+		
+	
+\end{document} 
