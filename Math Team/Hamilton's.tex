@@ -3,7 +3,7 @@
 \usepackage{amsmath}
 \usepackage{fullpage}
 \author{Hamilton, et al.} 
-%\date{\today} 
+\date{} 
 \title{Hamilton's Helpful Hints} 
  
 \begin{document} 
@@ -71,7 +71,7 @@
 		
 	
 	\subsection{Altitude to Hypotenuse Theorem}\label{sec: altitude to hypotenuse theorem}
-		For a right triangle with legs $a$ and $b$, hypotenuse $c$, the altitude $h$ to side $c$ divides the hypotenuse into two segments $x$ and $y$ that correspond to $b$ and $a$. \\
+		For a right triangle with legs $a$ and $b$, hypotenuse $c$, the altitude $h$ to side $c$ divides the hypotenuse into two segments $x$ and $y$ that correspond to $b$ and $a$.
 		\begin{equation}\label{sec: eqn:similarity relations 1}
 			\frac{x}{h} = \frac{h}{y}
 		\end{equation}
@@ -125,7 +125,7 @@
 		\end{equation}
 	
 	\subsection{Similar Triangles or Other Shapes}\label{sec: simple proportions between properties of various similar objects}
-		For two objects, 1 and 2, let $s$ be a side, $p$ be a perimeter, $h$ be a height, $A$ be an area, and $V$ be a volume. When using some $s_1$ and $s_2$ or other property, the two measures correspond between the two objects. This gives the following formulae:
+		For two objects, 1 and 2, let $s$ be a side, $p$ be a perimeter, $h$ be a height, $A$ be an area, and $V$ be a volume. When using some $s_1$ and $s_2$ or other measures of the objects, the measure on one object corresponds to the similar measure on the other. This gives the following formulae:
 		
 		\begin{equation}
 			\frac{s_1}{s_2} = \frac{p_1}{p_2} = \frac{h_1}{h_2}
@@ -137,7 +137,141 @@
 			\left(\frac{s_!}{s_2}\right)^3 = \frac{V_1}{V_2}
 		\end{equation}
 	
-	\subsection{A Special Similar Triangle}\label{sec: a common problem about similar triangles}
+	\subsection{A Special Triangle Similarity Relationship}\label{sec: a common problem about similar triangles}
+		Given a triangle ACD with point B on line AD such that angle ABC has the same measure as ACD, $\Delta ABC ~ \Delta ACD$, so
 		
+		\begin{equation}
+			\frac{AB}{AC} = \frac{AC}{AD}
+		\end{equation}
 	
+\section{Properties of Circles}
+	\subsection{Angles In and Around Circles}\label{sec: properties of arcs and angles of tangent and secant lines}
+	\subsection{Tangent and Secant Lines}\label{sec: properties of the lengths of tangent and secant lines}
+	\subsection{Using Radii with Inscribed and Circumscribed Circles}\label{sec: special formulae that involve triangles and circles}
+\section{Areas of Objects}
+	\subsection{Basic Formulae}\label{sec: basic area formulae}
+		\begin{equation}
+			A_{\delta} = \frac{1}{2}bh
+		\end{equation}
+		\begin{equation}
+			A_{rectangle} = bh
+		\end{equation}
+		\begin{equation}
+			A_{parallelogram} = \frac{1}{2}d_1d_2
+		\end{equation}
+		\begin{equation}
+			A_{trapezoid} = \frac{1}{2}h\left(b_1 + b_2\right)
+		\end{equation}
+		\begin{equation}
+			A_{equilateral triangle} = \frac{s^2}{4}\sqrt{3}
+		\end{equation}
+	\subsection{Some More Specific Areas}\label{sec: some interesting area formulae}
+		\begin{equation}
+			A_{polygon} = \frac{1}{2}ap
+		\end{equation}
+		\begin{equation}
+			A_{circle} = \pi r^2
+		\end{equation}
+		\begin{equation}
+			A_{sector} = \frac{arc ^{\circ}}{360^{\circ}}\pi r^2
+		\end{equation}
+		\begin{equation}
+			A_{hexagon} = 6A_{equilateral triangle} = \frac{3}{2}s^2\sqrt{3}
+		\end{equation}
+	\subsection{Special Formulae}\label{sec: Heron's and Brahmagupta's Formulae, Lunes}
+	
+		For a triangle circumscribed by a circle with sides $a, b, c$ and its semi-perimeter $s = \frac{a+b+c}{2}$, the area of the triangle is:
+		\begin{equation}
+			A = \sqrt{s(s-a)(s-b)(s-c)}
+		\end{equation}
+		
+		For a quadrilateral circumscribed by a circle with sides $a, b, c, d$ and its semi-perimeter $s = \frac{a+b+c+d}{2}$, the area of the quadrilateral is:
+		\begin{equation}
+			A = \sqrt{(s-a)(s-b)(s-c)(s-d)}
+		\end{equation}
+		
+		Two semicircles with diameters equal to each leg of a right triangle are defined to be Lunes.
+		\begin{equation}
+			A_{lunes} = A_{Rt.\Delta}
+		\end{equation}
+\section{Special Geometric Relationships}
+	\subsection{Properties of Polygons}\label{sec: information about angles, diagonals, and other aspects of polygons}
+	\subsection{The Centers of a Triangle}\label{sec: looking at the centroid, orthocenter, circumcenter, and incenter of a triangle}
+	\subsection{Coordinate Geometry}\label{sec: ways of working with coordinates... in geometry}
+\section{Properties of Three Dimensional Objects}
+	\subsection{Prisms and Cylinders}\label{sec: simple formulae for the more simple objects}
+		For any right prism or cylinder with with a perimeter of its base $P$, a height $h$, and an area of its bases $B$, its lateral surface area, total surface area, and volume are given by:
+		\begin{equation}
+			LA = ph
+		\end{equation}
+		\begin{equation}
+			TA = ph+2B
+		\end{equation}
+		\begin{equation}
+			V = Bh
+		\end{equation}
+	\subsection{Right Cones and Regular Pyramids}\label{sec: looking at the aspects of the pyramids/cones}
+		\begin{equation}
+			LA = \frac{1}{2}p\ell
+		\end{equation}
+		\begin{equation}
+			TA = LA+B
+		\end{equation}
+		\begin{equation}
+			V = \frac{1}{3}Bh
+		\end{equation}
+	\subsection{Frustums of a Pyramid or Cone}\label{sec: the special formulae relating to frustums}
+		In either pyramids or cones, let $P_1, P_2$ be the perimeters of the bases, $B_1, B_2$ be the areas of the bases, $h$ be the height of the frustum, and $\ell$ be the slant height. The lateral surface area, total surface area, and volume of these objects is given by:
+		
+		\begin{equation}
+			LA = \frac{1}{2}{\ell}(P_1 + P_2)
+		\end{equation}
+		\begin{equation}
+			TA = LA + B_1 + B_2
+		\end{equation}
+		\begin{equation}
+			V = \frac{1}{3}h\left(B_1 + B_2 + \sqrt{B_1 + B_2}\right)
+		\end{equation}
+	\subsection{Spheres}\label{sec: properties of a sphere}
+		\begin{equation}
+			SA = 4\pi r^2
+		\end{equation}
+		\begin{equation}
+			V = \frac{4}{3}\pi r^3
+		\end{equation}
+	\subsection{Special Volumes}\label{sec: volumes of regular square pyramid, regular octahedron, regular tetrahedron}
+		Let $e$ be the edge length of each regular object.
+		
+		For a regular square pyramid:
+		\begin{equation}
+			V = \frac{e^3\sqrt{2}}{6}
+		\end{equation}
+		
+		For a regular octahedron:
+		\begin{equation}
+			V = \frac{e^3\sqrt{3}}{3}
+		\end{equation}
+		
+		For a regular tetrahedron:
+		\begin{equation}
+			V = \frac{e^3\sqrt{2}}{12}
+		\end{equation}
+\section{Other Interesting Things}
+	\subsection{The Golden Triangle}\label{sec: 36-72-72 triangle and value of phi}
+	\subsection{Euler's Formula for Polyhedra}\label{sec: a relationship between vertices, edges, and faces in polyhedra}
+		Polyhedra are composed of interconnected polygons, creating a system of Vertices ($V$), Edges ($E$), and Faces ($F$) that occur in a precise relationship:
+		
+		\begin{equation}
+			V-E+F = 2
+		\end{equation}
+	\subsection{The Quadratic Formula}\label{sec: one of the most commonly used things in math team}
+		Given a quadratic equation in the form $ax^2+bx+c = 0$, the two solutions are:
+		\begin{equation}
+			x = \frac{-b\pm \sqrt{b^2-4ac}}{2a}
+		\end{equation}
+	\subsection{Ptolemy's Formula for an Inscribed Quadrilateral}\label{sec: formula relating the distances between the vertices of an inscribed quadrilateral}
+		For some quadrilateral QPSR inscribed in a circle, the lengths of the segments are related by the formula:
+		\begin{equation}
+			(PR)(QS) = (PS)(QR) + (PQ)(SR)
+		\end{equation}
 \end{document} 
