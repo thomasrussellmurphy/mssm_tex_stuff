@@ -63,27 +63,27 @@
 \ProvidesPackage{mla}
 \typeout{MLA Package - by Ryan Aycock}
 
-% % New code thanks to Edward Z. Yang
-%\ifpdf % We're generating a pdf
-%    \usepackage[pdftex]{color,graphicx}
-%    \pdfpagewidth=\paperwidth
-%    \pdfpageheight=\paperheight
-%    \usepackage{thumbpdf}
-%    %\pdfcompresslevel=9
-%\else
-%    \usepackage[dvips]{graphicx}
-%\fi
+% New code thanks to Edward Z. Yang
+\ifpdf % We're generating a pdf
+    \usepackage[pdftex]{color,graphicx}
+    \pdfpagewidth=\paperwidth
+    \pdfpageheight=\paperheight
+    \usepackage{thumbpdf}
+    %\pdfcompresslevel=9
+\else
+    \usepackage[dvips]{graphicx}
+\fi
 
- %The old code
- \ifx\pdfoutput\undefined % We're not running pdftex
- \usepackage[dvips]{graphicx}
- \else
- \usepackage[pdftex]{color,graphicx}
- \pdfpagewidth=\paperwidth
- \pdfpageheight=\paperheight
- \usepackage{thumbpdf}
- %\pdfcompresslevel=9
- \fi
+% The old code
+% \ifx\pdfoutput\undefined % We're not running pdftex
+% \usepackage[dvips]{graphicx}
+% \else
+% \usepackage[pdftex]{color,graphicx}
+% \pdfpagewidth=\paperwidth
+% \pdfpageheight=\paperheight
+% \usepackage{thumbpdf}
+% %\pdfcompresslevel=9
+% \fi
 
 \usepackage{times}
 
