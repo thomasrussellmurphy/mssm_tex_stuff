@@ -7,6 +7,15 @@
 \author{Hamilton, et al.} 
 \date{} 
 \title{Hamilton's Helpful Hints} 
+
+%todo: indicates place to do something
+%Places we need images:
+	%Triangle Geometry
+		%Two pole problem
+		%basic proportionality
+		%altitude to hypotenuse theorem
+		%angle bisector theorem
+		%special similar triangle
  
 \begin{document} 
 \maketitle 
@@ -157,6 +166,8 @@
 		
 		\input{circlesA4.pdf_tex} $x = \frac{1}{2}(a+b)$
 		
+		%todo: angle from center, angle with tangent and arc, angle with diameter, angle with chord, two right triangles on circle
+		
 	\subsection{Tangent and Secant Lines}\label{sec: properties of the lengths of tangent and secant lines}
 	
 		When a secant line intersects a tangent line outside a circle:
@@ -206,53 +217,57 @@
 \section{Areas of Objects}
 	\subsection{Basic Formulae}\label{sec: basic area formulae}
 		\begin{equation}
-			A_{\delta} = \frac{1}{2}bh
+			A_{\Delta} = \frac{1}{2}bh = \frac{1}{2}ab{\text{sin}}(C)
 		\end{equation}
 		\begin{equation}
-			A_{rectangle} = bh
+			A_\text{rectangle} = bh
 		\end{equation}
 		\begin{equation}
-			A_{parallelogram} = \frac{1}{2}d_1d_2
+			A_\text{parallelogram} = \frac{1}{2}d_1d_2 %todo: also a rhombus
 		\end{equation}
 		\begin{equation}
-			A_{trapezoid} = \frac{1}{2}h\left(b_1 + b_2\right)
+			A_\text{trapezoid} = \frac{1}{2}h\left(b_1 + b_2\right)
 		\end{equation}
 		\begin{equation}
-			A_{equilateral triangle} = \frac{s^2}{4}\sqrt{3}
+			A_\text{equilateral triangle} = \frac{s^2}{4}\sqrt{3}
 		\end{equation}
 	\subsection{Some More Specific Areas}\label{sec: some interesting area formulae}
 		\begin{equation}
-			A_{polygon} = \frac{1}{2}ap
+			A_\text{polygon} = \frac{1}{2}ap %todo: regular polygon only, explanation
 		\end{equation}
 		\begin{equation}
-			A_{circle} = \pi r^2
+			A_\text{circle} = \pi r^2
 		\end{equation}
 		\begin{equation}
-			A_{sector} = \frac{arc ^{\circ}}{360^{\circ}}\pi r^2
+			A_\text{sector} = \frac{arc ^{\circ}}{360^{\circ}}\pi r^2
 		\end{equation}
 		\begin{equation}
-			A_{hexagon} = 6A_{equilateral triangle} = \frac{3}{2}s^2\sqrt{3}
+			A_\text{hexagon} = 6A_\text{equilateral triangle} = \frac{3}{2}s^2\sqrt{3}
+		\end{equation}
+		\begin{equation}
+			A_\text{ellipse} = \frac{1}{2}ab{\pi}
 		\end{equation}
 	\subsection{Special Formulae}\label{sec: Heron's and Brahmagupta's Formulae, Lunes}
 	
-		For a triangle with sides $a, b, c$ circumscribed by a circle and the semi-perimeter $s = \frac{a+b+c}{2}$, its area is:
+		For a triangle with sides $a, b, c$ circumscribed by a circle and the semi-perimeter $s = \frac{a+b+c}{2}$, its area is defined by Heron's Formula:
 		\begin{equation}
 			A = \sqrt{s(s-a)(s-b)(s-c)}
 		\end{equation}
 		
-		For a quadrilateral circumscribed by a circle with sides $a, b, c, d$ and its semi-perimeter $s = \frac{a+b+c+d}{2}$, the area of the quadrilateral is:
+		For a quadrilateral circumscribed by a circle with sides $a, b, c, d$ and its semi-perimeter $s = \frac{a+b+c+d}{2}$, the area of the quadrilateral is defined by Brahmagupta's Formula:
 		\begin{equation}
 			A = \sqrt{(s-a)(s-b)(s-c)(s-d)}
 		\end{equation}
 		
 		Two semicircles with diameters equal to each leg of a right triangle are defined to be Lunes.
 		\begin{equation}
-			A_{lunes} = A_{Rt.\Delta}
+			A_\text{lunes} = A_{Rt.\Delta}
 		\end{equation}
+		%todo: 
 		
 \section{Special Geometric Relationships}
 	\subsection{Properties of Polygons}\label{sec: information about angles, diagonals, and other aspects of polygons}
-	The degree measure of the interior and exterior angles of an $n$-sided polygon are
+	The degree measure of the interior and exterior angles of an $n$-sided regular polygon are
 	
 		\begin{equation}
 			I = \frac{180^{\circ}(n-2)}{n}
@@ -267,18 +282,23 @@
 			N_{diagonals} = \frac {n(n-3)}{2}
 		\end{equation}
 	
-	
 	\subsection{The Centers of a Triangle}\label{sec: looking at the centroid, orthocenter, circumcenter, and incenter of a triangle}
 		The centroid is the point which is equidistant from each of the vertices of the triangle and is the point at which the three medians of the triangle intersect. It can be found by the mean of the coordinates of the vertices of the triangle. For the points $(x_1, y_1)$, $(x_2, y_2)$, $(x_3, y_3)$, the centroid is the point
 		\begin{equation}
 			\left(\frac{x_1 + x_2 + x_3}{3}, \frac{y_1 + y_2 + y_3}{3} \right)
 		\end{equation}
+		
+		The distance from a vertex to the centroid is $\frac{2}{3}$ the length of its median.
+		In addition, the altitudes of a triangle intersect at the orthocenter, the perpendicular bisectors intersect at the circumcenter, the angle bisectors intersect at the incenter.
+
 	\subsection{Coordinate Geometry}\label{sec: ways of working with coordinates... in geometry}
 		To find the distance from a point $P(x_1, y_1)$ to a line $Ax + By + C = 0$ (note the difference from standard form), use the formula:
 		
 		\begin{equation}
 			d = \frac{|Ax_1 + By_1 + C|}{\sqrt{A^2 + B^2}}
 		\end{equation}
+		
+		This formula can be applied to the distance between two parallel lines by choosing any point on one line and finding the distance to the other line.
 		
 		Given points $A(x_1,y_1)$ and $B(x_2,y_2)$, with point $C$ (the point of division) on segment $\overline{AB}$ and the distance $AC$, when $r = \frac{AC}{AB}$, the coordinates of point $C(x,y)$ are:
 		
