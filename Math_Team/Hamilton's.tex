@@ -1,12 +1,13 @@
 \documentclass[final, letterpaper, 12pt]{article}
 \usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{fullpage}
-\usepackage{graphicx}
-\usepackage{color}
-\author{Hamilton, et al.} 
+\usepackage{amsmath} %math package
+\usepackage{fullpage} %use full page
+\usepackage{graphicx} %allow graphics
+\usepackage{color} %just in case, may help
+\usepackage[parfill]{parskip} %prevents indenting, which is not needed in this document
 \date{} 
 \title{Hamilton's Helpful Hints} 
+\author{Hamilton (1990), Murphy (2012)}
 
 %todo: indicates place to do something
 %Places we need images:
@@ -16,12 +17,13 @@
 		%altitude to hypotenuse theorem
 		%angle bisector theorem
 		%special similar triangle
- 
-\begin{document} 
-\maketitle 
+		%proportionality with parallel side
 
+\begin{document}
+\maketitle
+	
 \section{Triangle Geometry}	
-	 \subsection{Comparing Triangles}\label{sec:using the Pythagorean Theorem}
+	 \subsection{Comparing Triangles}\label{sec: using the Pythagorean Theorem}
 		Using the Pythagorean Theorem, we can see, for a triangle with sides $a, b, c$: \\
 		For a right triangle:
 		\begin{equation}
@@ -37,46 +39,27 @@
 		\end{equation}
 	 
 	 \subsection{Families of Right Triangles}\label{sec: families of right triangles}
-		Finding Pythagorean Triples using algebra:
+		Finding Pythagorean Triples using algebra: For two integers $m$ and $n$ such that $m > n$ and the two values are relatively prime (they have no common factor except for 1), then the Pythagorean Triple is:
 		
-		For two integers $m$ and $n$ such that $m > n$ and the two values are relatively prime (they have no common factor except for 1), then the Pythagorean Triple is:
-		
-		\begin{equation}\label{sec: method of forming Pythagorean Triples}
+		\begin{equation}\label{method of forming Pythagorean Triples}
 			(m^2 - n^2, 2mn, m^2 + n^2)
 		\end{equation}
 		
-		Examples of some common triples:
+		Examples of some common triples (remember constant multiples):
 		
 		$(3, 4, 5) {\rightarrow} (6, 8, 10) {\rightarrow} (9, 12, 15)$ etc.
 		
-		$(5, 12, 13)$
-		
-		$(8, 15, 17)$
-		
-		$(7, 24, 25)$
-		
-		$(9, 40, 41)$
-		
-		$(11, 60, 61)$
-		
-		$(12, 35, 37)$
-		
-		$(20, 21, 29)$
-		
-		$(13, 84, 85)$
+		$(5, 12, 13)$, $(8, 15, 17)$, $(7, 24, 25)$, $(9, 40, 41)$, $(11, 60, 61)$, $(12, 35, 37)$, $(20, 21, 29)$
 	
 	\subsection{Special Right Triangles}\label{sec: patterns in special right triangles}
 	
-		In a $30^{\circ}-60^{\circ}-90^{\circ}$ right triangle, let $s$ be the shorter leg opposing the $30^{\circ}$ angle, $l$ be the longer leg opposing the $60^{\circ}$ angle, and $h$ be the hypotenuse. This means:
-		
-		\begin{equation}
-			s = \frac{1}{2}h
-		\end{equation}
+		In a $30^{\circ}-60^{\circ}-90^{\circ}$ right triangle, let $s$ be the shorter leg opposing the $30^{\circ}$ angle, $l$ be the longer leg opposing the $60^{\circ}$ angle, and $h$ be the hypotenuse. The side length relationship is:
+
 		\begin{equation}
 			l = s\sqrt{3} = \frac{1}{2}h\sqrt{3}
 		\end{equation}
 		
-		In a $45^{\circ}-45^{\circ}-90^{\circ}$ right triangle, let $s$ be the length of a leg and $h$ be the hypotenuse. This means:
+		In a $45^{\circ}-45^{\circ}-90^{\circ}$ right triangle, let $s$ be the length of a leg and $h$ be the hypotenuse. The side length relationship is:
 		\begin{equation}
 			l\sqrt{2} = h
 		\end{equation}
@@ -84,13 +67,13 @@
 	
 	\subsection{Altitude to Hypotenuse Theorem}\label{sec: altitude to hypotenuse theorem}
 		For a right triangle with legs $a$ and $b$, hypotenuse $c$, the altitude $h$ to side $c$ divides the hypotenuse into two segments $x$ and $y$ that correspond to $b$ and $a$.
-		\begin{equation}\label{sec: eqn:similarity relations 1}
+		\begin{equation}\label{eqn:similarity relations 1}
 			\frac{x}{h} = \frac{h}{y}
 		\end{equation}
-		\begin{equation}\label{sec: eqn:similarity relations 2}
+		\begin{equation}\label{eqn:similarity relations 2}
 			\frac{x}{b} = \frac{b}{c}, \frac{y}{a} = \frac{a}{c}
 		\end{equation}
-		\begin{equation}\label{sec: eqn:similarity relations 3}
+		\begin{equation}\label{eqn:similarity relations 3}
 			ch = ab 
 		\end{equation} 
 	
@@ -104,7 +87,7 @@
 		Let P be any point in the interior of the equilateral triangle. The sum of the distances from P to each side of the triangle is equal to the altitude of the triangle. If $A, B, C$ are the points on each side of the triangle closest to point P and $s$ is the side length of the triangle, then:
 		
 		\begin{equation}
-			PA + PB + PC = h = \frac{1}{2}s\sqrt{3}
+			PA + PB + PC = \frac{1}{2}s\sqrt{3}
 		\end{equation}
 	
 	\subsection{An Important Ratio with an Angle Bisector}\label{sec: a ratio concerning an angle bisector in a triangle}
@@ -137,7 +120,7 @@
 		\end{equation}
 	
 	\subsection{Similar Triangles or Other Shapes}\label{sec: simple proportions between properties of various similar objects}
-		For two objects, 1 and 2, let $s$ be a side, $p$ be a perimeter, $h$ be a height, $A$ be an area, and $V$ be a volume. When using some $s_1$ and $s_2$ or other measures of the objects, the measure on one object corresponds to the similar measure on the other. This gives the following formulae:
+		For two similar objects, 1 and 2, let $s$ be a side, $p$ be a perimeter, $h$ be a height, $A$ be an area, and $V$ be a volume. When using some $s_1$ and $s_2$ or other measures of the objects, the measure on one object corresponds to the similar measure on the other. This gives the following formulae:
 		
 		\begin{equation}
 			\frac{s_1}{s_2} = \frac{p_1}{p_2} = \frac{h_1}{h_2}
@@ -146,11 +129,11 @@
 			\left(\frac{s_1}{s_2}\right)^2 = \frac{A_1}{A_2}
 		\end{equation}
 		\begin{equation}
-			\left(\frac{s_!}{s_2}\right)^3 = \frac{V_1}{V_2}
+			\left(\frac{s_1}{s_2}\right)^3 = \frac{V_1}{V_2}
 		\end{equation}
 	
 	\subsection{A Special Triangle Similarity Relationship}\label{sec: a common problem about similar triangles}
-		Given a triangle ACD with point B on line AD such that angle ABC has the same measure as ACD, $\Delta ABC ~ \Delta ACD$, so
+		Given a triangle ACD with point B on line AD such that angle ABC has the same measure as ACD, $\Delta ABC \sim \Delta ACD$, so 
 		
 		\begin{equation}
 			\frac{AB}{AC} = \frac{AC}{AD}
@@ -403,4 +386,4 @@
 			(PR)(QS) = (PS)(QR) + (PQ)(SR)
 		\end{equation}
 		
-\end{document} 
+\end{document}
